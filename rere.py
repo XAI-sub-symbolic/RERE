@@ -372,6 +372,11 @@ def main():
           
           #Mutag
           policy = "log/models/policy_exp_Mutagenicity_150000__diff_mutag30.pth"
+          
+        elif prog_args.dataset == "REDDIT-BINARY":
+              node_indices = range(0,400,1)
+              policy ="log/models/policy_exp_REDDIT-BINARY_9000__77.pth" 
+          
 
            
        x_collector = XCollector()
